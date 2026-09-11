@@ -1,0 +1,21 @@
+[project]
+name = "krishimitra-observability"
+version = "0.1.0"
+description = "Structured logging, metrics, tracing, health monitoring, model observability, and operational telemetry for KrishiMitra-AI."
+requires-python = ">=3.13,<3.14"
+
+dependencies = [
+    "pydantic>=2.11.7,<3.0.0",
+    "structlog>=25.4.0,<26.0.0",
+    "prometheus-client>=0.22.1,<1.0.0",
+]
+
+[tool.uv]
+package = true
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/krishimitra_observability"]

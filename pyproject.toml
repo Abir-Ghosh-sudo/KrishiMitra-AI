@@ -1,0 +1,49 @@
+[project]
+name = "krishimitra-workspace"
+version = "0.1.0"
+description = "Production workspace for KrishiMitra-AI."
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = []
+
+[tool.uv]
+package = false
+
+[tool.uv.workspace]
+members = [
+    "apps/api",
+    "apps/worker",
+    "apps/scheduler",
+
+    "packages/core",
+    "packages/contracts",
+    "packages/events",
+    "packages/security",
+    "packages/language",
+    "packages/whatsapp",
+    "packages/ai",
+    "packages/ml",
+    "packages/speech",
+    "packages/vision",
+    "packages/documents",
+    "packages/rag",
+    "packages/weather",
+    "packages/decision_engine",
+    "packages/optimization",
+    "packages/simulation",
+    "packages/recommendation",
+    "packages/sustainability",
+    "packages/farm",
+    "packages/soil",
+    "packages/feedback",
+    "packages/geospatial",
+    "packages/alerts",
+    "packages/safety",
+    "packages/expert",
+    "packages/market",
+    "packages/database",
+    "packages/cache",
+    "packages/storage",
+    "packages/privacy",
+    "packages/observability",
+]
