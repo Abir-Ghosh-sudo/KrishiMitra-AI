@@ -536,11 +536,15 @@ name = "krishimitra-events"
 version = "0.1.0"
 source = { editable = "packages/events" }
 dependencies = [
+    { name = "krishimitra-contracts" },
     { name = "pydantic" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "pydantic", specifier = ">=2.11.7,<3.0.0" }]
+requires-dist = [
+    { name = "krishimitra-contracts", editable = "packages/contracts" },
+    { name = "pydantic", specifier = ">=2.11.7,<3.0.0" },
+]
 
 [[package]]
 name = "krishimitra-expert"

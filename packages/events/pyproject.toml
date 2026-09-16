@@ -5,10 +5,14 @@ description = "Event publishing, consuming, and outbox support for KrishiMitra-A
 requires-python = ">=3.13,<3.14"
 dependencies = [
     "pydantic>=2.11.7,<3.0.0",
+    "krishimitra-contracts",
 ]
 
 [tool.uv]
 package = true
+
+[tool.uv.sources]
+krishimitra-contracts = { workspace = true }
 
 [build-system]
 requires = ["hatchling"]
