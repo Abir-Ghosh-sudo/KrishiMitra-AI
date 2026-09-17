@@ -857,15 +857,21 @@ name = "krishimitra-whatsapp"
 version = "0.1.0"
 source = { editable = "packages/whatsapp" }
 dependencies = [
-    { name = "cryptography" },
     { name = "httpx" },
+    { name = "krishimitra-contracts" },
+    { name = "krishimitra-core" },
+    { name = "krishimitra-events" },
+    { name = "krishimitra-security" },
     { name = "pydantic" },
 ]
 
 [package.metadata]
 requires-dist = [
-    { name = "cryptography", specifier = ">=45.0.6,<46.0.0" },
     { name = "httpx", specifier = ">=0.28.1,<1.0.0" },
+    { name = "krishimitra-contracts", editable = "packages/contracts" },
+    { name = "krishimitra-core", editable = "packages/core" },
+    { name = "krishimitra-events", editable = "packages/events" },
+    { name = "krishimitra-security", editable = "packages/security" },
     { name = "pydantic", specifier = ">=2.11.7,<3.0.0" },
 ]
 
