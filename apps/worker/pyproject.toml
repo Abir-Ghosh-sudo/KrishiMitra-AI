@@ -1,16 +1,20 @@
 [project]
 name = "krishimitra-worker"
 version = "0.1.0"
-description = "Celery background worker for asynchronous KrishiMitra-AI processing."
+description = "Celery background workers for KrishiMitra-AI."
 requires-python = ">=3.13,<3.14"
-
 dependencies = [
     "celery>=5.5.3,<6.0.0",
+    "kombu>=5.5.4,<6.0.0",
     "redis>=6.4.0,<7.0.0",
+    "krishimitra-core",
 ]
 
 [tool.uv]
 package = true
+
+[tool.uv.sources]
+krishimitra-core = { workspace = true }
 
 [build-system]
 requires = ["hatchling"]
