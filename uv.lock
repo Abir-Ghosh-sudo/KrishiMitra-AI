@@ -708,12 +708,14 @@ version = "0.1.0"
 source = { editable = "apps/scheduler" }
 dependencies = [
     { name = "celery" },
+    { name = "krishimitra-core" },
     { name = "redis" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "celery", specifier = ">=5.5.3,<6.0.0" },
+    { name = "krishimitra-core", editable = "packages/core" },
     { name = "redis", specifier = ">=6.4.0,<7.0.0" },
 ]
 
