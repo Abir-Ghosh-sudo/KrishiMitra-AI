@@ -161,12 +161,19 @@ async def get_async_session() -> AsyncGenerator[AsyncSession, None]:
         yield session
 
 
+# Aliases for compatibility
+get_session = get_async_session
+AsyncSessionLocal = session_manager.session_factory
+
+
 __all__ = [
     "DEFAULT_DATABASE_URL",
     "DatabaseSessionManager",
     "create_database_engine",
     "create_session_factory",
     "get_async_session",
+    "get_session",
     "get_default_database_url",
     "session_manager",
+    "AsyncSessionLocal",
 ]
