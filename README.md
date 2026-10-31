@@ -1,63 +1,54 @@
+ <div align="center">
+
 # KrishiMitra-AI
+
 ### Intelligent Agriculture. Accessible to Every Farmer.
 
-<p align="center">
-  <strong>A WhatsApp-first, multilingual AI-powered agricultural advisory platform.</strong>
-  <br />
-  Helping farmers understand crop health, weather conditions, pest risks, irrigation needs, and agricultural decisions through accessible AI technology.
-</p>
+**A WhatsApp-first, multilingual AI-powered agricultural advisory platform.**
 
-<p align="center">
-  <a href="https://github.com/Abir-Ghosh-sudo/KrishiMitra-AI">
-    <img src="https://img.shields.io/badge/Project-KrishiMitra--AI-176B45?style=for-the-badge" alt="KrishiMitra AI" />
-  </a>
-  <img src="https://img.shields.io/badge/Python-3.13-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.13" />
-  <img src="https://img.shields.io/badge/API-FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/ML-PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
-  <img src="https://img.shields.io/badge/License-MIT-2F855A?style=for-the-badge" alt="MIT License" />
-</p>
+<img src="assets/krishimitra-hero.png" alt="KrishiMitra-AI — Intelligent Agriculture Platform" width="100%" />
 
-<p align="center">
-  <a href="#overview">Overview</a> •
-  <a href="#the-problem">Problem</a> •
-  <a href="#solution">Solution</a> •
-  <a href="#architecture">Architecture</a> •
-  <a href="#machine-learning">Machine Learning</a> •
-  <a href="#installation">Installation</a> •
-  <a href="#roadmap">Roadmap</a>
-</p>
+<br/>
+
+[![Python](https://img.shields.io/badge/Python-3.13-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-Deep_Learning-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![License](https://img.shields.io/badge/License-MIT-2F855A?style=for-the-badge)](LICENSE)
+
+[Overview](#overview) · [Features](#core-capabilities) · [UI Showcase](#product-ui-showcase) · [Architecture](#system-architecture) · [Machine Learning](#machine-learning) · [Resources](#developer-resources) · [Installation](#installation)
+
+</div>
 
 ---
 
 ## Overview
 
-Agriculture depends on timely information. A farmer may need to identify a crop disease, understand changing weather conditions, assess pest risks, decide when to irrigate, or choose an appropriate crop for a particular field.
+Agriculture depends on timely, accurate, and location-specific information. Farmers regularly need to identify crop diseases, understand changing weather conditions, assess pest risks, manage irrigation, and make informed decisions about crops and soil.
 
-However, useful agricultural information is often fragmented across different applications, websites, experts, and services. Access can be difficult when farmers face language barriers, limited connectivity, or a lack of technical knowledge.
+However, agricultural information is often fragmented across applications, websites, experts, and services. Language barriers, limited connectivity, and lack of technical knowledge can make accessing this information difficult.
 
-**KrishiMitra-AI** is designed to bring these capabilities together through a conversational agricultural advisory system.
+**KrishiMitra-AI** aims to bring these capabilities together through an intelligent, conversational agricultural advisory platform.
 
-Instead of requiring farmers to learn a separate application, the platform follows a WhatsApp-first approach. Farmers can interact through familiar messaging workflows and, as the platform evolves, provide text, voice messages, crop photographs, location information, and agricultural documents.
+Instead of requiring farmers to learn a separate application, KrishiMitra-AI follows a **WhatsApp-first approach**. Farmers can interact through familiar messaging workflows and provide information using text, voice messages, crop photographs, location information, and agricultural documents as the platform's integrations evolve.
 
 The backend is designed as a modular AI system that can coordinate machine learning models, weather information, agricultural knowledge retrieval, and safety-aware recommendations.
 
-### Project vision
+### Project Vision
 
 > Make intelligent agricultural assistance accessible, understandable, and actionable for farmers—regardless of their technical background or preferred language.
 
 ## The Problem
 
-Farmers regularly encounter decisions that require timely and context-specific information.
-
 | Challenge | Why it matters |
 |---|---|
 | Crop disease identification | Incorrect identification can lead to unnecessary treatment or crop loss. |
-| Pest management | Pest risks can change with weather, crop stage, and local conditions. |
+| Pest management | Pest risks vary with weather, crop stage, and local conditions. |
 | Weather uncertainty | Rainfall, temperature, humidity, and extreme weather affect farming decisions. |
 | Irrigation planning | Poor irrigation decisions can waste water and affect crop health. |
-| Soil and crop selection | Crop suitability depends on soil, climate, water, and local conditions. |
-| Language barriers | Agricultural information is not always available in a farmer's preferred language. |
-| Fragmented information | Farmers may need to consult several different sources to make one decision. |
+| Soil and crop selection | Crop suitability depends on soil, climate, water, and location. |
+| Language barriers | Agricultural information may not be available in a farmer's preferred language. |
+| Fragmented information | Farmers may need multiple sources to make one decision. |
 
 KrishiMitra-AI aims to connect these information sources through one consistent advisory workflow.
 
@@ -65,84 +56,98 @@ KrishiMitra-AI aims to connect these information sources through one consistent 
 
 KrishiMitra-AI is designed around five principles:
 
-1. **Accessibility:** WhatsApp-first interaction instead of requiring a dedicated farmer-facing application.
-2. **Multimodal interaction:** Support for text, images, voice, location, and documents as the platform develops.
-3. **Context awareness:** Consider crop, farm, soil, weather, location, and previous interactions when relevant.
+1. **Accessibility:** WhatsApp-first interaction rather than requiring a dedicated farmer-facing application.
+2. **Multimodal interaction:** Text, images, voice, location, and documents.
+3. **Context awareness:** Consider crop, farm, soil, weather, location, and previous interactions where relevant.
 4. **Evidence-oriented recommendations:** Combine model predictions with retrieved agricultural knowledge and external data.
-5. **Responsible AI:** Communicate uncertainty, confidence, limitations, and when human expert review is necessary.
+5. **Responsible AI:** Communicate uncertainty, confidence, limitations, and when expert review is necessary.
 
-## Product Experience
+---
 
-The following diagrams are conceptual UI and interaction designs. They illustrate the intended farmer experience, not screenshots of a completed production application.
+## Product UI Showcase
 
-### 1. WhatsApp-first farmer experience
+The following designs illustrate the intended product experience. They are conceptual interfaces, not screenshots of a completed production application.
 
-```text
-┌───────────────────────────────────────┐
-│              KRISHIMITRA              │
-│          Agricultural Assistant       │
-├───────────────────────────────────────┤
-│                                       │
-│  Farmer                               │
-│  My tomato leaves have brown spots.   │
-│  What should I do?                    │
-│                                       │
-│  Farmer                               │
-│  [Crop photograph attached]           │
-│                                       │
-│  KrishiMitra                          │
-│  I will assess the image and consider │
-│  the crop information and conditions. │
-│                                       │
-│  ┌─────────────────────────────────┐  │
-│  │ Crop health assessment          │  │
-│  │                                 │  │
-│  │ Possible issue: Under review    │  │
-│  │ Confidence: To be evaluated     │  │
-│  │                                 │  │
-│  │ Next step: Check the affected   │  │
-│  │ leaves and provide more context│  │
-│  └─────────────────────────────────┘  │
-│                                       │
-│  Ask a follow-up question...          │
-└───────────────────────────────────────┘
-```
+### 1. WhatsApp-First Farmer Experience
 
-### 2. Agricultural intelligence dashboard concept
+A farmer should be able to ask questions naturally, submit a crop photograph, and receive understandable guidance.
 
 ```text
-┌─────────────────────────────────────────────────────────────┐
-│ KRISHIMITRA                                      FARM OVERVIEW│
-├───────────────────┬─────────────────────────────────────────┤
-│                   │                                         │
-│ Overview          │  FARM INTELLIGENCE                      │
-│ Crop Health       │                                         │
-│ Weather           │  ┌──────────────┐ ┌───────────────────┐  │
-│ Pest Risk         │  │ Weather      │ │ Crop Health       │  │
-│ Irrigation        │  │ Conditions   │ │ Assessment        │  │
-│ Soil Analysis     │  │ Temperature  │ │ Model evaluation  │  │
-│ Recommendations   │  │ Humidity     │ │ and confidence    │  │
-│                   │  └──────────────┘ └───────────────────┘  │
-│                   │                                         │
-│                   │  ┌──────────────┐ ┌───────────────────┐  │
-│                   │  │ Pest Risk    │ │ Irrigation        │  │
-│                   │  │ Assessment   │ │ Recommendation    │  │
-│                   │  │ Risk factors │ │ Water planning    │  │
-│                   │  └──────────────┘ └───────────────────┘  │
-│                   │                                         │
-│                   │  FARM ACTIVITY                          │
-│                   │  Recent advisory and feedback history   │
-│                   │                                         │
-└───────────────────┴─────────────────────────────────────────┘
+┌────────────────────────────────────────┐
+│             KRISHIMITRA                │
+│        Agricultural Assistant          │
+├────────────────────────────────────────┤
+│                                        │
+│ Farmer:                                │
+│ My tomato leaves have brown spots.     │
+│ What should I do?                      │
+│                                        │
+│ [Crop photograph attached]             │
+│                                        │
+│ KrishiMitra:                           │
+│ I will assess the image and consider   │
+│ the crop information and conditions.  │
+│                                        │
+│ ┌────────────────────────────────────┐ │
+│ │ Crop health assessment             │ │
+│ │                                    │ │
+│ │ Possible issue: Under review       │ │
+│ │ Confidence: To be evaluated        │ │
+│ │                                    │ │
+│ │ Next step: Provide more context    │ │
+│ │ or request expert review.          │ │
+│ └────────────────────────────────────┘ │
+│                                        │
+│ Ask a follow-up question...            │
+└────────────────────────────────────────┘
 ```
 
-This dashboard is a product-design concept. The primary farmer interaction remains WhatsApp-first.
+### 2. Agricultural Intelligence Dashboard
+
+The dashboard concept organizes farm information into focused modules.
+
+```text
+┌────────────────────────────────────────────────────────────┐
+│ KRISHIMITRA                                      FARM PANEL │
+├───────────────────┬────────────────────────────────────────┤
+│                   │                                        │
+│ Overview          │  FARM INTELLIGENCE                     │
+│ Crop Health       │                                        │
+│ Weather           │  ┌──────────────┐ ┌──────────────────┐ │
+│ Pest Risk         │  │ Weather      │ │ Crop Health      │ │
+│ Irrigation        │  │ Conditions   │ │ Assessment       │ │
+│ Soil Analysis     │  │ Forecast     │ │ Model evaluation │ │
+│ Recommendations   │  └──────────────┘ └──────────────────┘ │
+│                   │                                        │
+│                   │  ┌──────────────┐ ┌──────────────────┐ │
+│                   │  │ Pest Risk    │ │ Irrigation       │ │
+│                   │  │ Assessment   │ │ Recommendation   │ │
+│                   │  └──────────────┘ └──────────────────┘ │
+│                   │                                        │
+│                   │  RECENT ADVISORIES                    │
+│                   │  Weather · Crop updates · Feedback    │
+└───────────────────┴────────────────────────────────────────┘
+```
+
+### 3. Core UI Modules
+
+| Module | Proposed interface elements |
+|---|---|
+| Crop Health | Image preview, prediction, confidence, review status |
+| Weather | Temperature, humidity, rainfall, forecast |
+| Pest Risk | Risk level, contributing factors, alerts |
+| Irrigation | Water requirements and rainfall context |
+| Crop Recommendation | Suggested crops and supporting factors |
+| Soil Analysis | Soil parameters and analysis results |
+| Advisory History | Previous questions, recommendations, feedback |
+
+> **Design status:** These are product concepts. Actual screens and functionality depend on implementation and deployment.
 
 ---
 
 ## Core Capabilities
 
-The repository is organized into dedicated application and domain packages. The capabilities below describe the system's intended scope; a package or route existing in the repository does not automatically mean that the corresponding feature is fully implemented, trained, or production-ready.
+The repository is organized into dedicated application and domain packages. The following describes the intended scope. A package or route existing in the repository does not automatically mean its feature is fully implemented, trained, or production-ready.
 
 ### 1. Crop Disease Intelligence
 
@@ -161,7 +166,7 @@ Potential workflow:
 
 Designed to distinguish between visual pest identification and environmental pest-risk prediction.
 
-The system can use relevant context such as:
+Potential context:
 
 - Crop type and crop stage.
 - Temperature and humidity.
@@ -187,20 +192,15 @@ Potential applications include rainfall awareness, heat-risk assessment, humidit
 
 ### 4. Irrigation Intelligence
 
-Designed to support water-management decisions using relevant agricultural and environmental information.
+Designed to support water-management decisions using agricultural and environmental information.
 
-Possible inputs:
+Potential inputs:
 
-- Crop type.
-- Crop stage.
+- Crop type and crop stage.
 - Soil characteristics.
-- Temperature.
-- Humidity.
-- Rainfall.
-- Weather forecasts.
+- Temperature and humidity.
+- Rainfall and forecasts.
 - Available irrigation information.
-
-The objective is to support informed water management rather than provide unsupported fixed irrigation schedules.
 
 ### 5. Crop Recommendation
 
@@ -211,12 +211,9 @@ Potential inputs include:
 - Soil properties.
 - pH and nutrient information.
 - Climate conditions.
-- Rainfall.
-- Temperature.
+- Rainfall and temperature.
 - Water availability.
 - Geographic context.
-
-Recommendations should include their assumptions and limitations.
 
 ### 6. Soil Intelligence
 
@@ -228,7 +225,7 @@ Potential inputs include soil pH, nitrogen, phosphorus, potassium, moisture, and
 
 Retrieval-Augmented Generation is intended to connect conversational AI with relevant agricultural knowledge.
 
-A typical workflow:
+Typical workflow:
 
 1. Understand the farmer's question.
 2. Identify relevant agricultural context.
@@ -237,15 +234,15 @@ A typical workflow:
 5. Generate a grounded response.
 6. Communicate uncertainty when evidence is insufficient.
 
-RAG is intended to complement ML predictions, not replace model validation or expert judgment.
+RAG complements ML predictions; it does not replace model validation or expert judgment.
 
 ### 8. Voice and Multilingual Interaction
 
 The platform is designed to support farmers who prefer regional languages and voice-based communication.
 
-The planned workflow includes speech input, language identification, transcription, agricultural reasoning, and a response in the appropriate language.
+The intended workflow includes speech input, language identification, transcription, agricultural reasoning, and a response in the appropriate language.
 
-Actual language and speech capabilities depend on the configured providers and deployed models.
+Actual language and speech capabilities depend on configured providers and deployed models.
 
 ### 9. Agricultural Documents
 
@@ -263,19 +260,19 @@ The platform architecture includes dedicated feedback and event-related domains 
 
 ## System Architecture
 
-KrishiMitra-AI follows a modular monorepo architecture.
+KrishiMitra-AI follows a modular Python monorepo architecture.
 
-The main architectural separation is:
+Main architectural separation:
 
-- `apps/` contains application entry points and orchestration.
-- `packages/` contains reusable domain capabilities.
-- `db/` contains database-related resources.
-- `models/` and `data/` organize model and dataset resources.
-- `docs/` contains project documentation.
-- `infrastructure/` contains deployment-related resources.
-- `tests/` contains testing resources.
+- `apps/` — application entry points and orchestration.
+- `packages/` — reusable domain capabilities.
+- `db/` — database-related resources.
+- `models/` and `data/` — model and dataset resources.
+- `docs/` — project documentation.
+- `infrastructure/` — deployment-related resources.
+- `tests/` — testing resources.
 
-### High-level architecture
+### High-Level Architecture
 
 ```mermaid
 flowchart TD
@@ -316,7 +313,7 @@ flowchart TD
 
 *Conceptual target architecture. Not every integration or processing stage is claimed to be operational.*
 
-### Request lifecycle
+### Request Lifecycle
 
 ```mermaid
 sequenceDiagram
@@ -334,7 +331,7 @@ sequenceDiagram
     A->>Q: Enqueue processing task
     Q->>C: Deliver task
     C->>O: Process agricultural request
-    O->>O: Gather relevant model and data results
+    O->>O: Gather model and data results
     O->>D: Submit evidence and confidence
     D->>D: Apply safety and decision rules
     D-->>C: Advisory result
@@ -342,7 +339,7 @@ sequenceDiagram
     W-->>F: Deliver advisory
 ```
 
-### Design principles
+### Architecture Principles
 
 - Keep business logic outside transport-specific API routes.
 - Separate synchronous request handling from long-running processing.
@@ -356,8 +353,6 @@ sequenceDiagram
 ---
 
 ## Repository Structure
-
-The following is a simplified overview of the repository's organization.
 
 ```text
 KrishiMitra-AI/
@@ -400,12 +395,15 @@ KrishiMitra-AI/
 │   ├── weather/              # Weather intelligence
 │   └── whatsapp/             # WhatsApp integration
 │
+├── assets/
+│   └── krishimitra-hero.png  # Project hero image
+│
 ├── data/                     # Dataset resources
 ├── db/                       # Database and migration resources
 ├── docs/                     # Documentation and ADRs
 ├── infrastructure/           # Infrastructure configuration
 ├── models/                   # Model artifacts and metadata
-├── scripts/                  # Development and utility scripts
+├── scripts/                  # Development utilities
 ├── tests/                    # Automated tests
 │
 ├── .github/
@@ -425,7 +423,7 @@ KrishiMitra-AI/
 └── README.md
 ```
 
-This tree describes the repository's modular organization, not a guarantee that every package contains a complete implementation.
+This is a simplified overview of the repository's organization, not a guarantee that every package contains a complete implementation.
 
 ---
 
@@ -433,7 +431,7 @@ This tree describes the repository's modular organization, not a guarantee that 
 
 The project uses a Python-first architecture with a modular application and package layout.
 
-| Layer | Technology / component | Purpose |
+| Layer | Technology / Component | Purpose |
 |---|---|---|
 | Main language | Python 3.13 | Application and ML development |
 | Dependency management | UV | Workspace and dependency management |
@@ -448,31 +446,31 @@ The project uses a Python-first architecture with a modular application and pack
 | AI knowledge | RAG package | Evidence retrieval |
 | Messaging | WhatsApp package | Farmer communication |
 | Migrations | Alembic | Database schema evolution |
-| Containers | Docker Compose configuration | Local and deployment infrastructure |
+| Containers | Docker Compose | Local and deployment infrastructure |
 
 Exact versions and optional integrations should be taken from `pyproject.toml`, `uv.lock`, and the relevant package configuration.
 
 ---
 
-## Machine Learning Architecture
+## Machine Learning
 
 Machine learning is one of the most important parts of KrishiMitra-AI.
 
-However, agricultural intelligence is not one single prediction problem. Disease classification, pest detection, irrigation prediction, crop recommendation, and yield estimation require different datasets, architectures, and evaluation methods.
+Agricultural intelligence is not one single prediction problem. Disease classification, pest detection, irrigation prediction, crop recommendation, and yield estimation require different datasets, architectures, and evaluation methods.
 
-### Current ML implementation status
+### Current ML Implementation Status
 
 The repository contains a reusable ML architecture with model-injection patterns.
 
-The existing generic training infrastructure accepts an estimator and delegates fitting and prediction to it. Disease inference and pest-risk inference similarly work with injected model objects.
+The generic training infrastructure accepts an estimator and delegates fitting and prediction to it. Disease inference and pest-risk inference similarly work with injected model objects.
 
-**This means the generic infrastructure does not, by itself, establish which concrete algorithm is configured, whether a model has been trained, or whether production model weights exist.**
+**The generic infrastructure does not, by itself, establish which concrete algorithm is configured, whether a model has been trained, or whether production model weights exist.**
 
-Do not interpret the algorithms in the next table as already trained or deployed models.
+The following algorithms are proposed candidates, not claims about already trained or deployed models.
 
-### Recommended model strategy
+### Recommended Model Strategy
 
-| Agricultural task | Recommended starting point | Task type |
+| Agricultural Task | Recommended Starting Point | Task Type |
 |---|---|---|
 | Crop disease classification | EfficientNet-B0 | Image classification |
 | Crop stage classification | EfficientNet-B0 | Image classification |
@@ -483,9 +481,9 @@ Do not interpret the algorithms in the next table as already trained or deployed
 | Yield prediction | CatBoost Regressor | Regression |
 | Soil-based prediction | CatBoost / Random Forest | Classification or regression |
 
-These are proposed candidates. Final selection should be based on dataset quality, validation performance, inference requirements, and deployment constraints.
+Final selection should depend on dataset quality, validation performance, inference requirements, and deployment constraints.
 
-### Proposed training pipeline
+### Proposed Training Pipeline
 
 ```mermaid
 flowchart TD
@@ -512,9 +510,7 @@ flowchart TD
     DEPLOY --> MONITOR
 ```
 
-### Dataset preparation
-
-Every model needs a dataset that matches its exact task.
+### Dataset Preparation
 
 **Image classification datasets**
 
@@ -541,9 +537,9 @@ Every model needs a dataset that matches its exact task.
 - Leakage prevention.
 - Location-aware and time-aware validation.
 
-### Evaluation standards
+### Evaluation Standards
 
-| Task | Useful metrics |
+| Task | Useful Metrics |
 |---|---|
 | Classification | Precision, recall, F1-score, confusion matrix |
 | Imbalanced classification | Macro F1, per-class recall, PR-AUC |
@@ -551,9 +547,9 @@ Every model needs a dataset that matches its exact task.
 | Regression | MAE, RMSE, R² |
 | Probability quality | Calibration and reliability analysis |
 
-For agricultural deployment, a high overall accuracy is not sufficient. A model should also be evaluated on difficult examples, unseen farms or locations, and classes where false negatives can cause significant harm.
+For agricultural deployment, high overall accuracy is not sufficient. Models should also be evaluated on difficult examples, unseen farms or locations, and classes where false negatives can cause significant harm.
 
-### Model reliability
+### Model Reliability
 
 The system should consider:
 
@@ -573,7 +569,7 @@ A model prediction is an estimate, not a guaranteed diagnosis.
 
 KrishiMitra-AI is designed to combine different forms of agricultural intelligence instead of relying on one general-purpose language model.
 
-### Proposed orchestration flow
+### Proposed Orchestration Flow
 
 ```mermaid
 flowchart TD
@@ -615,9 +611,9 @@ A reliable implementation should preserve source information, avoid unsupported 
 
 The WhatsApp integration is designed to act as the farmer-facing communication layer.
 
-### Supported input directions
+### Intended Input Types
 
-| Input | Intended processing |
+| Input | Intended Processing |
 |---|---|
 | Text message | Intent detection and agricultural reasoning |
 | Crop photograph | Image validation and visual inference |
@@ -625,7 +621,7 @@ The WhatsApp integration is designed to act as the farmer-facing communication l
 | Location | Geographic and weather context |
 | Document | Document extraction and knowledge retrieval |
 
-### Message processing considerations
+### Message Processing Considerations
 
 - Webhook validation.
 - Duplicate event handling.
@@ -636,19 +632,17 @@ The WhatsApp integration is designed to act as the farmer-facing communication l
 - Response delivery tracking.
 - Privacy-aware logging.
 
-The actual availability of each input type depends on the configured WhatsApp integration and deployed processing services.
+Actual availability of each input type depends on the configured WhatsApp integration and deployed processing services.
 
 ---
 
 ## Data and Model Management
 
-A reliable agricultural AI system needs more than model code.
-
-It needs reproducible datasets, clear model metadata, controlled artifacts, and evaluation records.
+A reliable agricultural AI system needs more than model code. It needs reproducible datasets, clear model metadata, controlled artifacts, and evaluation records.
 
 The repository separates `data/` and `models/` so that these resources can be managed independently from application code.
 
-### Recommended data organization
+### Recommended Dataset Organization
 
 ```text
 data/
@@ -659,9 +653,9 @@ data/
 └── metadata/
 ```
 
-This is a recommended organization for datasets; use the existing repository layout where it differs.
+Use the existing repository layout where it differs.
 
-### Recommended model artifact organization
+### Recommended Model Artifact Organization
 
 ```text
 models/
@@ -673,7 +667,7 @@ models/
 └── metadata/
 ```
 
-Model artifacts should be versioned and accompanied by:
+Model artifacts should be accompanied by:
 
 - Model architecture and version.
 - Training dataset reference.
@@ -684,15 +678,13 @@ Model artifacts should be versioned and accompanied by:
 - Supported input format.
 - Known limitations.
 
-Large datasets, private farm records, credentials, and sensitive model artifacts should not be committed to Git unless there is an explicit reason and appropriate access control.
+Large datasets, private farm records, credentials, and sensitive model artifacts should not be committed to Git without an explicit reason and appropriate access control.
 
 ---
 
 ## API and Application Design
 
 The FastAPI application acts as the main backend entry point.
-
-The intended separation is:
 
 | Component | Responsibility |
 |---|---|
@@ -705,7 +697,7 @@ The intended separation is:
 | Database layer | Persist application data |
 | Decision engine | Combine evidence and rules |
 
-### Health checks
+### Health Checks
 
 The project architecture uses a health endpoint prefix:
 
@@ -715,11 +707,11 @@ The project architecture uses a health endpoint prefix:
 
 The exact endpoint behaviour should be verified against the running API implementation.
 
-### API documentation
+### API Documentation
 
 FastAPI can expose interactive API documentation when the application is running and its documentation routes are enabled.
 
-Typical paths are:
+Typical paths:
 
 ```text
 /docs
@@ -730,7 +722,95 @@ These are framework defaults, not a guarantee that the current deployment expose
 
 ---
 
-## Installation and Local Development
+## Developer Resources
+
+A curated collection of documentation, tools, datasets, and research references useful for developing KrishiMitra-AI.
+
+### Backend and Infrastructure
+
+| Resource | Purpose |
+|---|---|
+| [Python Documentation](https://docs.python.org/3/) | Python language reference |
+| [FastAPI](https://fastapi.tiangolo.com/) | API development |
+| [UV](https://docs.astral.sh/uv/) | Python dependency management |
+| [Celery](https://docs.celeryq.dev/) | Background task processing |
+| [PostgreSQL](https://www.postgresql.org/docs/) | Relational database |
+| [PostGIS](https://postgis.net/documentation/) | Geospatial database |
+| [Redis](https://redis.io/docs/latest/) | Caching and task infrastructure |
+| [Docker](https://docs.docker.com/) | Containerization |
+| [Alembic](https://alembic.sqlalchemy.org/) | Database migrations |
+
+### Machine Learning and Deep Learning
+
+| Resource | Purpose |
+|---|---|
+| [PyTorch](https://pytorch.org/docs/stable/index.html) | Deep learning and model training |
+| [TorchVision](https://pytorch.org/vision/stable/index.html) | Image classification and computer vision |
+| [Scikit-learn](https://scikit-learn.org/stable/) | Traditional machine learning |
+| [CatBoost](https://catboost.ai/docs/) | Tabular agricultural prediction |
+| [XGBoost](https://xgboost.readthedocs.io/) | Gradient boosting |
+| [Ultralytics](https://docs.ultralytics.com/) | Object detection workflows |
+| [Hugging Face](https://huggingface.co/docs) | Models and datasets |
+
+### Agricultural Datasets and Research
+
+| Resource | Potential Application |
+|---|---|
+| [PlantVillage Dataset](https://github.com/spMohanty/PlantVillage-Dataset) | Crop disease image classification |
+| [PlantVillage on Hugging Face](https://huggingface.co/datasets/mohanty/PlantVillage) | Dataset loading and experimentation |
+| [PlantVillage Research Paper](https://doi.org/10.3389/fpls.2016.01419) | Plant disease image classification research |
+| [FAO](https://www.fao.org/) | Agricultural knowledge and research |
+| [FAOSTAT](https://www.fao.org/faostat/) | Agricultural statistics |
+| [Kaggle Datasets](https://www.kaggle.com/datasets) | Agricultural ML datasets |
+| [Google Dataset Search](https://datasetsearch.research.google.com/) | Discover research datasets |
+
+Dataset note: Check each dataset's licence, source, class distribution, collection conditions, and suitability before training or redistributing it. Laboratory leaf images alone are not sufficient evidence of field-level model reliability.
+
+### Weather and Geospatial Data
+
+| Resource | Purpose |
+|---|---|
+| [Open-Meteo API](https://open-meteo.com/en/docs) | Weather forecasts and historical data |
+| [NASA POWER](https://power.larc.nasa.gov/) | Weather and solar-related datasets |
+| [Google Earth Engine](https://earthengine.google.com/) | Geospatial and satellite-data analysis |
+| [OpenStreetMap](https://www.openstreetmap.org/) | Geographic information |
+| [GeoPandas](https://geopandas.org/) | Geospatial data processing |
+
+### Generative AI, RAG and Language
+
+| Resource | Purpose |
+|---|---|
+| [Hugging Face Transformers](https://huggingface.co/docs/transformers) | Language and vision models |
+| [Hugging Face Datasets](https://huggingface.co/docs/datasets) | Dataset loading and processing |
+| [Sentence Transformers](https://sbert.net/) | Embeddings and semantic search |
+| [FAISS](https://faiss.ai/) | Vector similarity search |
+| [Ollama](https://ollama.com/) | Local model execution |
+| [LangChain](https://python.langchain.com/docs/introduction/) | LLM application workflows |
+| [LlamaIndex](https://docs.llamaindex.ai/) | Retrieval and data-connected LLM applications |
+
+### WhatsApp and Communication
+
+| Resource | Purpose |
+|---|---|
+| [WhatsApp Business Platform](https://developers.facebook.com/docs/whatsapp/) | WhatsApp messaging integration |
+| [Meta Developer Portal](https://developers.facebook.com/) | App configuration and credentials |
+| [FastAPI](https://fastapi.tiangolo.com/) | Webhook request handling |
+
+### Development and Collaboration
+
+| Resource | Purpose |
+|---|---|
+| [Git](https://git-scm.com/doc) | Version control |
+| [GitHub Actions](https://docs.github.com/en/actions) | CI/CD automation |
+| [Pytest](https://docs.pytest.org/) | Automated testing |
+| [Pydantic](https://docs.pydantic.dev/latest/) | Data validation |
+| [OpenAPI](https://www.openapis.org/) | API specification |
+
+These are development references, not a declaration that every listed tool, service, or dataset is already integrated into the project.
+
+---
+
+## Installation
 
 ### Prerequisites
 
@@ -740,9 +820,9 @@ These are framework defaults, not a guarantee that the current deployment expose
 - PostgreSQL with PostGIS for geospatial database functionality
 - Redis for configured caching and background-processing workflows
 
-Additional services may be required depending on which application modules are enabled.
+Additional services may be required depending on the application modules enabled.
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Abir-Ghosh-sudo/KrishiMitra-AI.git
@@ -756,13 +836,13 @@ Official installation instructions:
 
 https://docs.astral.sh/uv/getting-started/installation/
 
-Verify the installation:
+Verify:
 
 ```bash
 uv --version
 ```
 
-### 3. Install project dependencies
+### 3. Install Dependencies
 
 ```bash
 uv sync
@@ -770,15 +850,15 @@ uv sync
 
 The repository includes `pyproject.toml` and `uv.lock` for workspace and dependency management.
 
-### 4. Configure environment variables
+### 4. Configure Environment Variables
 
 Create a local `.env` file using the configuration documented for the services you intend to run.
 
 Do not copy credentials from another environment or commit real secrets.
 
-The current repository's environment template should be checked and populated before treating it as a complete setup guide.
+Check the current environment template and populate it before treating this as a complete setup guide.
 
-### 5. Configure external services
+### 5. Configure External Services
 
 Depending on the enabled workflows, configure:
 
@@ -789,7 +869,7 @@ Depending on the enabled workflows, configure:
 - Weather data provider configuration, if required.
 - AI model or inference provider configuration, if required.
 
-Use the actual setting names defined by the application code and configuration modules.
+Use the actual setting names defined by application code and configuration modules.
 
 ### 6. Run the API
 
@@ -801,13 +881,13 @@ Use the actual entry-point module defined in the repository when starting Uvicor
 uv run uvicorn krishimitra_api.main:app --reload
 ```
 
-### 7. Run background processing
+### 7. Run Background Processing
 
 The worker and scheduler are separate application components.
 
 Start them using the entry points and configuration defined in their respective packages. Do not assume a worker can process jobs until its broker, task registration, and dependencies are configured.
 
-### 8. Verify the application
+### 8. Verify the Application
 
 Check the configured health route:
 
@@ -825,9 +905,7 @@ Testing is essential because agricultural recommendations can influence real-wor
 
 The repository includes a `tests/` directory for automated testing resources.
 
-Recommended testing layers:
-
-| Test category | What to verify |
+| Test Category | What to Verify |
 |---|---|
 | Unit tests | Individual functions and domain logic |
 | Contract tests | Shared request and response structures |
@@ -838,7 +916,7 @@ Recommended testing layers:
 | Safety tests | Low confidence and uncertain predictions |
 | Workflow tests | End-to-end message processing |
 
-### Quality principles
+### Quality Principles
 
 - Avoid data leakage between training and testing.
 - Validate every external input.
@@ -856,7 +934,7 @@ Agricultural data can contain sensitive information about farmers, locations, fa
 
 Security should be considered throughout the system.
 
-### Security priorities
+### Security Priorities
 
 - Never commit API keys, passwords, tokens, or private credentials.
 - Keep local environment files out of version control.
@@ -898,22 +976,22 @@ Any chemical treatment recommendation should be validated against relevant local
 
 The following roadmap describes development goals, not a declaration that all items are completed.
 
-| Area | Development goal |
+| Area | Development Goal |
 |---|---|
 | Core API | Stable request validation and application services |
 | WhatsApp | Reliable webhook and message-processing workflow |
 | Weather | Location-aware forecast and agricultural risk integration |
 | Vision | Validated crop disease and pest image models |
-| ML training | Reproducible dataset and training pipelines |
+| ML Training | Reproducible dataset and training pipelines |
 | RAG | Evidence-grounded agricultural knowledge retrieval |
 | Speech | Regional-language voice workflows |
-| Farm context | Persistent farm and crop information |
+| Farm Context | Persistent farm and crop information |
 | Recommendations | Crop, irrigation, and soil intelligence |
 | Safety | Confidence calibration and expert escalation |
 | Observability | Structured logs, metrics, and error tracking |
 | Deployment | Secure and reproducible production infrastructure |
 
-### Long-term direction
+### Long-Term Direction
 
 The long-term goal is to develop a dependable agricultural intelligence platform that can combine local context, machine learning, retrieved knowledge, and human expertise.
 
@@ -933,13 +1011,9 @@ Before making significant changes:
 6. Document configuration and architectural decisions.
 7. Avoid committing credentials or private datasets.
 
-For contribution guidelines, see:
+For contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-[CONTRIBUTING.md](CONTRIBUTING.md)
-
-For security-related concerns, see:
-
-[SECURITY.md](SECURITY.md)
+For security-related concerns, see [SECURITY.md](SECURITY.md).
 
 ---
 
@@ -953,27 +1027,29 @@ See the [LICENSE](LICENSE) file for the complete license text.
 
 ## Project Information
 
-**Project:** KrishiMitra-AI  
-**Category:** Agricultural AI / Machine Learning / Intelligent Advisory  
-**Architecture:** Modular Python monorepo  
-**Primary interface:** WhatsApp-first  
-**API framework:** FastAPI  
-**Background processing:** Celery  
-**Database direction:** PostgreSQL / PostGIS  
-**Dependency management:** UV  
+| Field | Details |
+|---|---|
+| Project | KrishiMitra-AI |
+| Category | Agricultural AI / Machine Learning / Intelligent Advisory |
+| Architecture | Modular Python monorepo |
+| Primary Interface | WhatsApp-first |
+| API Framework | FastAPI |
+| Background Processing | Celery |
+| Database Direction | PostgreSQL / PostGIS |
+| Dependency Management | UV |
+| Developer | Abir Ghosh |
+| Institution | Narula Institute of Technology |
 
-**Repository:**  
-https://github.com/Abir-Ghosh-sudo/KrishiMitra-AI
-
-**Developer:** Abir Ghosh  
-**Institution:** Narula Institute of Technology
+**Repository:** [github.com/Abir-Ghosh-sudo/KrishiMitra-AI](https://github.com/Abir-Ghosh-sudo/KrishiMitra-AI)
 
 ---
 
-<p align="center">
-  <strong>KrishiMitra-AI</strong>
-  <br />
-  Building a more accessible, intelligent, and sustainable future for agriculture.
-  <br /><br />
-  <a href="https://github.com/Abir-Ghosh-sudo/KrishiMitra-AI">Explore the Repository</a>
-</p>
+<div align="center">
+
+### KrishiMitra-AI
+
+**Building a more accessible, intelligent, and sustainable future for agriculture.**
+
+[Explore the Repository](https://github.com/Abir-Ghosh-sudo/KrishiMitra-AI)
+
+</div>
