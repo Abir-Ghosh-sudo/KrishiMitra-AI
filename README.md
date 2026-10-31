@@ -6,7 +6,7 @@
 
 **A WhatsApp-first, multilingual AI-powered agricultural advisory platform.**
 
-<img src="assets/krishimitra-hero.png" alt="KrishiMitra-AI — Intelligent Agriculture Platform" width="100%" />
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/55f4fa6d-d3d2-4927-9180-a11d741f28b5" />
 
 <br/>
 
