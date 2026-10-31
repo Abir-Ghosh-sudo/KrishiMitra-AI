@@ -6,7 +6,7 @@
 
 **A WhatsApp-first, multilingual AI-powered agricultural advisory platform.**
 
-![Uploading image.png…]()
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/b8f3c47a-8ca1-449b-a9e4-34cacbc45d39" />
 
 <br/>
 
