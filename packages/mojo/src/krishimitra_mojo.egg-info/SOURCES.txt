@@ -1,0 +1,13 @@
+setup.py
+src/krishimitra_mojo/__init__.py
+src/krishimitra_mojo/crop_sim.py
+src/krishimitra_mojo/geospatial.py
+src/krishimitra_mojo/image.py
+src/krishimitra_mojo/irrigation.py
+src/krishimitra_mojo/kernels.py
+src/krishimitra_mojo/risk.py
+src/krishimitra_mojo/soil.py
+src/krishimitra_mojo.egg-info/PKG-INFO
+src/krishimitra_mojo.egg-info/SOURCES.txt
+src/krishimitra_mojo.egg-info/dependency_links.txt
+src/krishimitra_mojo.egg-info/top_level.txt
