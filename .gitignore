@@ -1,0 +1,15 @@
+# Local training datasets
+/data/raw/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Incomplete Kaggle downloads
+*.kaggle-partial
+
+# Environment variables (secrets)
+.env
+*.env
+!.env.example
